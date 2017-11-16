@@ -22,4 +22,4 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^add/(\d+)/(\d+)', label_views.index, name='add'),
     url(r'^$', label_views.return_home_page)
-    ]
+]

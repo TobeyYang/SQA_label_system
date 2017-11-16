@@ -9,106 +9,110 @@
 </head>
 
 <body>
-    <div id="loading-mask" class="hidden">
-        <img src="loading.gif">
-    </div>
-    <div id="message-hint" class="normal">
-        Success
-    </div>
-    <header>
-        <div class="left-part">
-            <div>
-                <span>Labeled: </span>
-                <span id="tagged-num">0</span>
-            </div>
+<div id="loading-mask" class="hidden">
+    <img src="loading.gif">
+</div>
+<div id="message-hint" class="normal">
+    Success
+</div>
+<header>
+    <div class="left-part">
+        <div>
+            <span>Labeled: </span>
+            <span id="tagged-num">0</span>
         </div>
-        <div class="right-part">
-            <span class="circle-btn next-btn" id="next-labeled-btn">Next Labeled</span>
-            <span class="circle-btn next-btn" id="next-btn" title="next">Next</span>
-        </div>
-    </header>
-    <div class="content-block">
-        <session class="left-session">
-            <p style="margin-left: 25px;">
-                <span>Title: </span>
-                <span id="table-title">Girl on Fire (song)</span>
+    </div>
+    <div class="right-part">
+        <span class="circle-btn next-btn" id="next-labeled-btn">Next Labeled</span>
+        <span class="circle-btn next-btn" id="next-btn" title="next">Next</span>
+    </div>
+</header>
+<div class="content-block">
+    <session class="left-session">
+        <p style="margin-left: 25px;">
+            <span>Title: </span>
+            <span id="table-title">Girl on Fire (song)</span>
+        </p>
+        <table id="knowledge-table">
+            <thead>
+            <tr>
+                <th>Region</th>
+                <th>Date</th>
+                <th>Format</th>
+                <th>Version(s)</th>
+                <th>Label</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>France</td>
+                <td>September 4, 2012</td>
+                <td>Digital Download</td>
+                <td>Main single Inferno remix Bluelight remix</td>
+                <td>Sony Music</td>
+            </tr>
+            <tr>
+                <td>France</td>
+                <td>September 4, 2012</td>
+                <td>Digital Download</td>
+                <td>Main single Inferno remix Bluelight remix</td>
+                <td>Sony Music</td>
+            </tr>
+            <tr>
+                <td>France</td>
+                <td>September 4, 2012</td>
+                <td>Digital Download</td>
+                <td>Main single Inferno remix Bluelight remix</td>
+                <td>Sony Music</td>
+            </tr>
+            </tbody>
+        </table>
+    </session>
+    <session class="right-session">
+        <div class="question-block">
+            <p>
+                <span>Query ID: </span>
+                <span class="question-id">nt-20</span>
             </p>
-            <table id="knowledge-table">
-                <thead>
-                    <tr>
-                        <th>Region</th>
-                        <th>Date</th>
-                        <th>Format</th>
-                        <th>Version(s)</th>
-                        <th>Label</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>France</td>
-                        <td>September 4, 2012</td>
-                        <td>Digital Download</td>
-                        <td>Main single Inferno remix Bluelight remix</td>
-                        <td>Sony Music</td>
-                    </tr>
-                    <tr>
-                        <td>France</td>
-                        <td>September 4, 2012</td>
-                        <td>Digital Download</td>
-                        <td>Main single Inferno remix Bluelight remix</td>
-                        <td>Sony Music</td>
-                    </tr>
-                    <tr>
-                        <td>France</td>
-                        <td>September 4, 2012</td>
-                        <td>Digital Download</td>
-                        <td>Main single Inferno remix Bluelight remix</td>
-                        <td>Sony Music</td>
-                    </tr>
-                </tbody>
-            </table>
-        </session>
-        <session class="right-session">
-            <div class="question-block">
+            <p class="query-show">which is the first city listed alphabetically ?</p>
+
+            <div class="editor">
                 <p>
-                    <span>Query ID: </span>
-                    <span class="question-id">nt-20</span>
+                    <span>Follow Up: </span>
+                    <span>[follow up type, discourse type, follow up query]</span>
                 </p>
-                <p class="query-show">which is the first city listed alphabetically ?</p>
 
-                <div class="editor">
-                    <p>
-                        <span>Follow Up: </span>
-                        <span>[follow up type, discourse type, follow up query]</span>
-                    </p>
-                    <form class="editor-form" action="">
-                        <p>
-                            <span>Mention: </span>
-                            <span class="mention"></span>
-                        </p>
-                        <div class="editor-input-block">
-                            <select class="editor-input option-select">
-                                <option value="Anaphora">Anaphora</option>
-                                <option value="Ellipsis">Ellipsis</option>
-                            </select>
-                            <select class="editor-input option-select">
-                                <option value="shift">shift</option>
-                                <option value="add_filter">add_filter</option>
-                                <option value="delete_filter">delete_filter</option>
-                                <option value="update_filter">update_filter</option>
-                                <option value="other">other</option>
-                            </select>
-                            <input type="text" class="editor-input query-input"/>
-                            <input type="button" value="Submit" class="editor-btn submit-tag-btn">
-                        </div>
-                    </form>
+                <!--maybe need several forms-->
+                <form class="editor-form" action="">
 
-                </div>
+                    <span class="mention-title">Mention:</span>
+                    <span class="mention-string">first city</span>
+
+
+                    <div class="editor-input-block">
+                        <select class="editor-input option-select">
+                            <option value="Anaphora">Anaphora</option>
+                            <option value="Ellipsis">Ellipsis</option>
+                        </select>
+                        <select class="editor-input option-select">
+                            <option value="shift">shift</option>
+                            <option value="add_filter">add_filter</option>
+                            <option value="delete_filter">delete_filter</option>
+                            <option value="update_filter">update_filter</option>
+                            <option value="other">other</option>
+                        </select>
+                        <input type="text" class="editor-input query-input"/>
+                        <input type="text" class="editor-input anaphora-phrase-input"/>
+                        <input type="button" value="Submit" class="editor-btn submit-tag-btn">
+                    </div>
+                </form>
+
             </div>
-        </session>
-    </div>
-    <script src="common.js"></script>
-    <script src="label.js"></script>
+        </div>
+    </session>
+</div>
+<script src="common.js"></script>
+<script src="label.js"></script>
 </body>
 
 </html>

@@ -114,7 +114,6 @@ p {
     overflow: auto;
 }
 
-
 .general-tag-btn {
     cursor: pointer;
     font-size: 1.2em;
@@ -188,11 +187,11 @@ tr:last-of-type {
     margin: 0 auto 0 auto;
 }
 
-
 /* Editor */
 
 .editor {
     width: 100%;
+    margin-top: 10px;
     margin-bottom: 30px;
     overflow: auto;
 }
@@ -213,7 +212,7 @@ tr:last-of-type {
     /*float: right;*/
     /*margin-top: 15px;*/
     /*margin-left: 15px;*/
-    width: 80px;
+    width: 70px;
     height: 25px;
     border: none;
     border-radius: 2px;
@@ -244,7 +243,7 @@ tr:last-of-type {
 }
 
 .editor-input-block:first-of-type {
-    margin-top: 20px;
+    /*margin-top: 20px;*/
 }
 
 .editor-input-block {
@@ -265,13 +264,29 @@ tr:last-of-type {
     font-weight: bold;
 }
 
-.option-select{
+.anaphora-phrase-input {
+    width: 50px;
+}
+
+.option-select {
     width: 70px;
     font-weight: bold;
 }
 
-.query-show{
+.query-show {
     display: inline;
+    font-weight: lighter;
+}
+
+.editor-form {
+    margin-top: 20px;
+}
+
+.mention-title {
+    font-weight: bold;
+}
+
+.mention-string {
     font-weight: lighter;
 }
 
