@@ -102,3 +102,4 @@ ENV/
 
 /db.sqlite3
 /label/migrations/
+/table_csv/

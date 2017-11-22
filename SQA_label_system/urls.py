@@ -18,8 +18,13 @@ from django.contrib import admin
 
 from label import views as label_views
 
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^add/(\d+)/(\d+)', label_views.index, name='add'),
-    url(r'^$', label_views.return_home_page)
+    url(r'.*submit/', label_views.submit_data, name='submit'),
+    url(r'next/', label_views.get_next, name="next"),
+    url(r'^(\d+)', label_views.get_query, name='query'),
+    # url(r'^$', label_views.get_home, name="home")
+    url(r'^$', label_views.get_next, name='home')
 ]
+
